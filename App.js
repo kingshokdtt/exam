@@ -22,32 +22,40 @@ export default function App() {
 
     <View style={{paddingleft:30, height:150, borderWidth:3, marginStart:50, marginEnd:500, backgroundColor:'green'}}>
         <Text style={styles.text}>IS657 Midterm</Text>
-        </View>
-
-       
-
-    
+    </View>
         
-        <View style={styles.container}>
+      <View style={styles.container}>
+        <View
+          style={{
+            flexDirection:'row',
+            alignItems:'center',
+          }}
+        >
           <Text style={styles.title}>Number1[10 to 20]:</Text>
           <TextInput style={styles.textInput} onChangeText={setNumberText} />
-          
-        <View style={styles.container}>
+        </View>
+        
+        
+        
+      <View style={styles.container}>
+        <View
+          style={{
+            flexDirection:'row',
+            alignItems:'center',
+          }}
+        >
           <Text style={styles.title}>Number2[100 to 200]:</Text>
           <TextInput style={styles.textInput} onChangeText={setNumberText} />
-
-          <Pressable style={styles.pressable} onPress={calcSquare}>
-            <Text>CALCULATE SUM</Text>
-          </Pressable>
-          
-          <Text style={styles.title}>The square is {message}</Text>
-          <StatusBar style="auto" />
-
         </View>
+
+        <Pressable style={styles.pressable} onPress={calcSquare}>
+          <Text>CALCULATE SUM</Text>
+        </Pressable>
+        
+        <StatusBar style='auto'/>
         </View>
       </View>
-    
-    
+      </View>    
     </SafeAreaView>
   );
 }
@@ -77,13 +85,6 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
 
-  boxstyle: {
-    width: 200,
-    height: 100,
-    flexDirection: 'column',
-    justifyContent:'center',
-    alignItems:'center',
-  },
   text:{
     fontSize:40,
     fontColor:'yellow',
