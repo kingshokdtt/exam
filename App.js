@@ -34,8 +34,7 @@ export default function App() {
           <Text style={styles.title}>Number1[10 to 20]:</Text>
           <TextInput style={styles.textInput} onChangeText={setNumberText} />
         </View>
-        
-        
+      </View>        
         
       <View style={styles.container}>
         <View
@@ -47,15 +46,24 @@ export default function App() {
           <Text style={styles.title}>Number2[100 to 200]:</Text>
           <TextInput style={styles.textInput} onChangeText={setNumberText} />
         </View>
-
-        <Pressable style={styles.pressable} onPress={calcSquare}>
-          <Text>CALCULATE SUM</Text>
-        </Pressable>
-        
-        <StatusBar style='auto'/>
-        </View>
       </View>
-      </View>    
+
+      <View style={styles.container}>
+        <View
+          style={{
+            flexDirection:'row',
+            alignItems:'center',
+          }}
+        >
+          <Pressable style={styles.pressable} onPress={calcSquare}>
+            <Text style={styles.title}>CALCULATE SUM</Text>
+          </Pressable>
+        </View>
+      </View>  
+        <StatusBar style='auto'/>
+      </View>
+      
+        
     </SafeAreaView>
   );
 }
