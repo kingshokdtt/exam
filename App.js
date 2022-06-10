@@ -1,3 +1,4 @@
+import React from "react"
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView,StyleSheet, Text, TextInput, Pressable, View } from 'react-native';
 import { useState } from 'react';
@@ -18,9 +19,9 @@ export default function App() {
 
   return (
     <SafeAreaView>
-      <View style={{marginTop:50}}>
+      <View style={{marginTop:100}}>
 
-    <View style={{paddingleft:30, height:150, borderWidth:3, marginStart:50, marginEnd:500, backgroundColor:'green'}}>
+    <View style={{paddingleft:20, height:150, width:300, borderWidth:3, marginStart:40, marginEnd:500, backgroundColor:'green'}}>
         <Text style={styles.text}>IS657 Midterm</Text>
     </View>
         
@@ -62,7 +63,6 @@ export default function App() {
       </View>  
         <StatusBar style='auto'/>
       </View>
-      
         
     </SafeAreaView>
   );
@@ -74,11 +74,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'flex-start',
     justifyContent: 'center',
-    padding: 50,
+    padding: 30,
   },
   title: {
     fontSize: 20,
-    color: 'blue',
+    color: 'black',
   },
   pressable: {
     marginVertical: 10,
@@ -94,9 +94,11 @@ const styles = StyleSheet.create({
   },
 
   text:{
-    fontSize:40,
-    fontColor:'yellow',
+    fontSize:35,
+    color:'yellow',
     alignItems:'center',
     justifyContent:'center',
+    padding:20,
+    
   },
 });
